@@ -25,10 +25,11 @@ sudo mv /resturant /var/www/httpd
   
 sudo vi /etc/httpd/conf/httpd.conf
 
-*** IMPORTANT*** MUST***  MAKE*** IN*** HTTPD.CONF*** FILE**!!! 
-  
-# Edit {{ DocumentRoot "/var/www/html/restaurant"}}
+EDIT  DocumentRoot "/var/www/html      TO    DocumentRoot "/var/www/html/restaurant"
 
+
+*** IMPORTANT*** MUST***  MAKE*** CHANGE** IN*** httpd.conf*** FILE**!!! 
+  
 # Check for Syntax errors 
   
 httpd -t
