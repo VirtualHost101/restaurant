@@ -1,19 +1,19 @@
 # Restuarant website
 To run this website on Liunx based systems (Centos, RHEL  etc) please follow the steps below.
 
-#update yum packages
+# update yum packages
 
 sudo yum -y update
 
-#download httpd
+# download httpd
 
 sudo yum -y install httpd
 
-#Install Git
+# Install Git
 
 sudo yum -y install git
 
-#download code
+# download code
 
 git clone git@github.com:VirtualHost101/restaurant.git
 
@@ -21,7 +21,7 @@ git clone git@github.com:VirtualHost101/restaurant.git
 
 sudo mv /resturant /var/www/httpd
 
-#Change <documentroot> in /etc/httpd/conf/httpd.conf
+# Change <documentroot> in /etc/httpd/conf/httpd.conf
   
 sudo vi /etc/httpd/conf/httpd.conf
 
@@ -36,7 +36,7 @@ httpd -t
   
 ** output should be (Syntax OK) **
 
-#Start httpd service
+# Start httpd service
   
 sudo systemctl start httpd
   
